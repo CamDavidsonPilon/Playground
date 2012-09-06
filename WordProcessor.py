@@ -24,7 +24,7 @@ class CleanMDashesExtension(object):
 @WordProcessor.plugin
 class CleanUpperCase(object):
         def cleanup(self,text):
-            return text[-1]
+            return text.lower()
 
 
 print WordProcessor.process("Hi this is a Test")
